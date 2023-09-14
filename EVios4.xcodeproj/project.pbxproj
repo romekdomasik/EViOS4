@@ -18,6 +18,7 @@
 		4276EC752AB2E5780039A3E2 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276EC712AB2E5780039A3E2 /* Expense+CoreDataProperties.swift */; };
 		4276EC762AB2E5780039A3E2 /* ExpenseSection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276EC722AB2E5780039A3E2 /* ExpenseSection+CoreDataClass.swift */; };
 		4276EC772AB2E5780039A3E2 /* ExpenseSection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276EC732AB2E5780039A3E2 /* ExpenseSection+CoreDataProperties.swift */; };
+		4276EC7B2AB2E6410039A3E2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276EC7A2AB2E6410039A3E2 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4276EC712AB2E5780039A3E2 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4276EC722AB2E5780039A3E2 /* ExpenseSection+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseSection+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4276EC732AB2E5780039A3E2 /* ExpenseSection+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseSection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4276EC7A2AB2E6410039A3E2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		4276EC582AB2E3B70039A3E2 /* EVios4 */ = {
 			isa = PBXGroup;
 			children = (
+				4276EC792AB2E62F0039A3E2 /* Service */,
 				4276EC782AB2E5810039A3E2 /* Model */,
 				4276EC592AB2E3B70039A3E2 /* AppDelegate.swift */,
 				4276EC5B2AB2E3B70039A3E2 /* SceneDelegate.swift */,
@@ -88,6 +91,14 @@
 				4276EC6D2AB2E47F0039A3E2 /* Expenses.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4276EC792AB2E62F0039A3E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4276EC7A2AB2E6410039A3E2 /* DataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				4276EC752AB2E5780039A3E2 /* Expense+CoreDataProperties.swift in Sources */,
 				4276EC742AB2E5780039A3E2 /* Expense+CoreDataClass.swift in Sources */,
 				4276EC5A2AB2E3B70039A3E2 /* AppDelegate.swift in Sources */,
+				4276EC7B2AB2E6410039A3E2 /* DataManager.swift in Sources */,
 				4276EC5C2AB2E3B70039A3E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
