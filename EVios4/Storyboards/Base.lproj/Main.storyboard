@@ -139,9 +139,9 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ExpensePicker" destination="vUD-aW-72e" id="hyx-OE-iwg"/>
                         <outlet property="datePicker" destination="MUN-TS-nkJ" id="eDX-rr-nEv"/>
                         <outlet property="expenseNameTF" destination="4I6-QW-vOg" id="lNP-Cc-hxY"/>
+                        <outlet property="expensePicker" destination="vUD-aW-72e" id="hyx-OE-iwg"/>
                         <outlet property="expenseValueTF" destination="qzi-43-iwk" id="TFF-IV-xOn"/>
                     </connections>
                 </viewController>
