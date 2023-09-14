@@ -26,7 +26,6 @@ class AddExpensesViewController: UIViewController, UIPickerViewDelegate, UIPicke
         datePicker.preferredDatePickerStyle = .wheels
         datePicker.datePickerMode = .date
         datePicker.date = Date()
-        datePicker.minimumDate = Date()
         
         let request = ExpenseSection.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
@@ -49,8 +48,11 @@ class AddExpensesViewController: UIViewController, UIPickerViewDelegate, UIPicke
         
         dismiss(animated: true){
             DataManager.shared.addExpense(name: expenseName, date: selectedDate, value: value, type: section)
+        }
     }
-        
+    
+    @IBAction func pressCancelBtn(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

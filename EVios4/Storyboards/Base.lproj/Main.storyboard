@@ -93,7 +93,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="gSs-xw-0iX">
                                 <rect key="frame" x="36" y="135" width="320" height="488"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4I6-QW-vOg">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom de la dépense" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4I6-QW-vOg">
                                         <rect key="frame" x="10" y="0.0" width="300" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="HLa-HP-Pol"/>
@@ -102,7 +102,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-43-iwk">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Montant de la dépense" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-43-iwk">
                                         <rect key="frame" x="10" y="67" width="300" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="8BQ-2Z-au1"/>
@@ -131,6 +131,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Nouvelle dépense" id="BKf-qc-YJw">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8q6-iZ-mrA">
+                            <connections>
+                                <action selector="pressCancelBtn:" destination="q6q-PN-XVQ" id="GbZ-ym-JAj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="hR4-rc-Hhq">
                             <connections>
                                 <action selector="pressSaveExpenseBtn:" destination="q6q-PN-XVQ" id="3vM-ai-a1P"/>
