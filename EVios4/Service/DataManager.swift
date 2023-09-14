@@ -48,6 +48,11 @@ class DataManager{
         saveContext()
     }
     
+    func deleteExpenseType(_ expenseType: ExpenseSection){
+        context.delete(expenseType)
+        saveContext()
+    }
+    
     func addExpense(name: String, date: Date, value: Float, type: ExpenseSection) {
         let expense = Expense(context: context)
         expense.name = name

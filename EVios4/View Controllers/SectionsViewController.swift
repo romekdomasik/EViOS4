@@ -71,6 +71,17 @@ class SectionsViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+           true
+       }
+
+       func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+           if editingStyle == .delete {
+               let expenseType = resultsController.object(at: indexPath)
+               DataManager.shared.deleteExpenseType(expenseType)
+           }
+       }
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
