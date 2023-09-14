@@ -62,9 +62,21 @@ class ExpensesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let expense = resultsController.object(at: indexPath)
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(expense.name)                                                  \(expense.value) €"
-        return cell
+            
+            // Instancier une cellule de style par défaut sans identifiant de réutilisation
+            let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+            
+            cell.textLabel?.text = expense.name
+            
+            // Créez un label pour afficher expense.value
+            let valueLabel = UILabel(frame: CGRect(x: cell.frame.size.width - 100, y: 0, width: 100, height: cell.frame.size.height))
+            valueLabel.text = "\(expense.value) €"
+            valueLabel.textAlignment = .right // Alignez le texte à droite
+            
+            // Ajoutez le label de la valeur en tant que sous-vue de la cellule
+            cell.contentView.addSubview(valueLabel)
+            
+            return cell
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
